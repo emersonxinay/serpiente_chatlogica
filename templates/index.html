@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Generador de Texto con GPT-3.5</title>
+  </head>
+  <body>
+    <h1>Generador de Texto con GPT-3.5</h1>
+    <form method="POST">
+      <label for="texto_entrada">Texto de Entrada:</label><br />
+      <textarea name="texto_entrada" rows="4" cols="50"></textarea><br /><br />
+      <input type="submit" value="Generar Texto" />
+    </form>
+
+    {% if respuesta_generada %}
+    <h2>Respuesta Generada:</h2>
+    <p>{{ respuesta_generada }}</p>
+    {% endif %}
+  </body>
+</html>
